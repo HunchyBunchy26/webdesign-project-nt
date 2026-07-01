@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+section,
+footer {
+    border: 2px solid lightgray;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+body {
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
