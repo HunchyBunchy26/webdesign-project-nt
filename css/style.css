@@ -4,28 +4,80 @@
     padding: 0;
 }
 
-header,
-section,
-footer {
-    border: 2px solid lightgray;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
 body {
     padding: 1rem;
 }
 
-ul{
-    list-style: none;
+header,
+main,
+section,
+footer {
+    border: 2px solid lightgray;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 6px;
+    --background-color: rgb(225, 248, 191);
+    
+}
+
+/*GRID LAYOUT*/
+
+h1 {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1"
+    ".wings .wings .wings"
+    "nav nav nav";
+}
+
+--nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*FLEX DESIGN*/
+
+--h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+--.wings {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+--nav {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 footer {
     text-align: center;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+
+a:focus,
+button:focus {
+    outline: 3px solid green;
+    outline-offset: 2px;
 }
