@@ -4,13 +4,35 @@
     padding: 0;  
 }
 
+.slider {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slide 6s infinite;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        @keyframes slide {
+            0% {margin-left: -100%;}
+            33% {margin-left: -100%;}
+            66% {margin-left: -200%;}
+            100% {margin-left: 0;}
+        }
 
 body {
     padding: 1rem;
 }
 
 footer {
-    margin: 0.5rem;
     padding: 1.5rem;
     border-radius: 6px;
     background-color: rgb(128, 224, 128);
@@ -32,11 +54,28 @@ header nav {
     gap: 1rem;
 }
 
-.wings {
-    text-align: center;
-    padding: 2rem;
+section {
+    border: 1px solid rgb(128, 224, 128);
+    border-radius: 6px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+aside {
+    border: 1px solid rgb(128, 224, 128);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+aside:hover {
+    border: 2px solid rgb(128, 224, 128);
 }
 
 footer {
     text-align: center;
+}
+
+@media (min-width: 1950px) {
+
 }
