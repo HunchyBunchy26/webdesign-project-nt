@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Niconne&family=Quicksand&family=Sorts+Mill+Goudy:ital@0;1&family=Vast+Shadow&display=swap" rel="stylesheet");
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    font-family: "Sorts Mill Goudy", serif;
 }
 
 .slider {
@@ -55,21 +58,22 @@ header nav {
 }
 
 section {
-    border: 1px solid rgb(128, 224, 128);
+    border: 2px solid rgb(128, 224, 128);
     border-radius: 6px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 aside {
-    border: 1px solid rgb(128, 224, 128);
+    border: 2px solid rgb(128, 224, 128);
     border-radius: 6px;
     margin-bottom: 2rem;
     padding: 1rem;
 }
 
 aside:hover {
-    border: 2px solid rgb(128, 224, 128);
+    background-color: rgb(231, 180, 241);
+    border: 2px solid rgb(231, 180, 241);
 }
 
 footer {
