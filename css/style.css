@@ -6,7 +6,7 @@
 }
 
 main {
-    margin: 100px;
+    margin: 50px;
 }
 
 header {
@@ -21,17 +21,19 @@ header {
 header nav {
     display: flex;
     gap: 1rem;
+    
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: larger;
 }
 
 nav a:hover {
     text-transform: uppercase;
     color: green;
-    font-weight: 900;
+    font-weight: bolder;
 }
 
 
@@ -162,3 +164,12 @@ textarea
 }
 /*CONTACT US PAGE*/
 
+
+/*MOBILE VIEW FOR ANY 750PX OR LESS*/
+@media (max-width: 850px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1px;
+    }
+}
