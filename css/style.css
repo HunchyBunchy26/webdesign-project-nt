@@ -2,13 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Sorts Mill Goudy", serif;    
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: large;
 }
 
 main {
     margin: 50px;
 }
 
+/*HOME PAGE HEADER BAR*/
 header {
     display: flex;
     justify-content: space-between;
@@ -16,12 +18,17 @@ header {
     background-color: rgb(128, 224, 128);
     padding: 1.5rem;
     border: 1px solid rgb(128,224,128);
-    }
+}
+
+.flag-title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
 header nav {
     display: flex;
     gap: 1rem;
-    
 }
 
 nav a {
@@ -35,6 +42,7 @@ nav a:hover {
     color: green;
     font-weight: bolder;
 }
+/*HOME PAGE HEADER BAR*/
 
 
 /*HOME PAGE IMAGE SLIDER*/
@@ -71,21 +79,11 @@ section {
     margin-bottom: 2rem;
 }
 
-aside {
-    border: 2px solid rgb(128, 224, 128);
-    border-radius: 6px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    font-size: 18px;
+.latvia-map {
+    text-align: center;
 }
 
-aside:hover {
-    background-color: rgb(231, 180, 241);
-    border: 2px solid rgb(231, 180, 241);
-}
-
-
-/*LEARN MORE BUTTONS*/
+/*HOME PAGE LEARN MORE BUTTONS*/
 .learnbutton {
     display: inline-block;
     text-decoration: none;
@@ -98,15 +96,46 @@ aside:hover {
     color: green;
     font-weight: 900;
 }
+/*HOME PAGE LEARN MORE BUTTONS*/
 
 
+/*HOME PAGE ASIDE ELEMENTS*/
+.aside-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-between;
+}
+
+.table-container {
+    --flex: 1;
+    border: 2px solid rgb(128, 224, 128);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-container h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+/*HOME PAGE ASIDE ELEMENTS*/
+
+
+/*FOOTER*/
 footer {
     padding: 1.5rem;
     background-color: rgb(128, 224, 128);
     border: 1px solid rgb(128,224,128);
     text-align: center;
 }
-/*LEARN MORE BUTTONS*/
+/*FOOTER*/
 
 
 /*ABOUT PAGE*/
@@ -124,6 +153,22 @@ footer {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+aside {
+    --display: flex;
+    --flex-wrap: wrap;
+    flex: 3;
+    border: 2px solid rgb(128, 224, 128);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+aside:hover {
+    background-color: rgb(231, 180, 241);
+    border: 2px solid rgb(231, 180, 241);
 }
 /*ABOUT PAGE*/
 
@@ -165,11 +210,28 @@ textarea
 /*CONTACT US PAGE*/
 
 
-/*MOBILE VIEW FOR ANY 750PX OR LESS*/
-@media (max-width: 850px) {
+/*MOBILE VIEW*/
+@media (max-width: 1247px) {
     header nav {
         flex-direction: column;
-        align-items: flex-end;
+        text-align: end;
         gap: 1px;
     }
 }
+
+@media (max-width: 820px) {
+    .flag {
+        display: none;
+    }
+}
+
+/*@media (max-width: 1326px) {
+    .latvia-map {
+        display: none;
+    }
+
+    .aside-table {
+        justify-content: center;
+    }
+}
+/*MOBILE VIEW*/
