@@ -18,6 +18,8 @@ header {
     background-color: rgb(128, 224, 128);
     padding: 1.5rem;
     border: 1px solid rgb(128,224,128);
+    position: sticky;
+    top: 0;
 }
 
 .flag-title {
