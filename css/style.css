@@ -79,8 +79,14 @@ section {
     margin-bottom: 2rem;
 }
 
-.latvia-map {
+.map {
     text-align: center;
+    margin-top: 5rem;
+}
+
+.latvia-map {
+    border: 2px solid rgb(128, 224, 128);
+    border-radius: 6px;
 }
 
 /*HOME PAGE LEARN MORE BUTTONS*/
@@ -97,35 +103,6 @@ section {
     font-weight: 900;
 }
 /*HOME PAGE LEARN MORE BUTTONS*/
-
-
-/*HOME PAGE ASIDE ELEMENTS*/
-.aside-table {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    justify-content: space-between;
-}
-
-.table-container {
-    --flex: 1;
-    border: 2px solid rgb(128, 224, 128);
-    border-radius: 6px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    font-size: 18px;
-}
-
-th,td {
-    padding: 10px;
-    text-align: center;
-}
-
-.table-container h2 {
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-/*HOME PAGE ASIDE ELEMENTS*/
 
 
 /*FOOTER*/
@@ -155,9 +132,7 @@ footer {
     padding-bottom: 2rem;
 }
 
-aside {
-    --display: flex;
-    --flex-wrap: wrap;
+.facts {
     flex: 3;
     border: 2px solid rgb(128, 224, 128);
     border-radius: 6px;
@@ -166,18 +141,52 @@ aside {
     font-size: 18px;
 }
 
-aside:hover {
+.facts:hover {
     background-color: rgb(231, 180, 241);
     border: 2px solid rgb(231, 180, 241);
 }
 /*ABOUT PAGE*/
 
 
+/*INFO PAGE*/
+.info-header {
+    text-align: center;
+}
+
+.aside-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-evenly;
+}
+
+.table-container {
+    border: 2px solid rgb(128, 224, 128);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-container h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+/*INFO PAGE*/
+
+
 /*CONTACT US PAGE*/
 form {    
     border: 2px solid rgb(128, 224, 128);
     border-radius: 6px;
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem;
 }
 
 legend {
@@ -186,8 +195,7 @@ legend {
 
 label,
 input,
-small,
-textarea {
+small {
     display: block;
 }
 
@@ -204,8 +212,13 @@ textarea
 
 .formbutton {
     margin-top: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 20px;
+}
+
+.formbutton:hover {
+    background-color: rgb(128, 224, 128);
+    text-transform: uppercase;
 }
 /*CONTACT US PAGE*/
 
@@ -225,13 +238,12 @@ textarea
     }
 }
 
-/*@media (max-width: 1326px) {
+@media (max-width: 720px) {
     .latvia-map {
         display: none;
     }
-
-    .aside-table {
-        justify-content: center;
+    .map {
+        display: none;
     }
 }
 /*MOBILE VIEW*/
