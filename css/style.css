@@ -225,6 +225,29 @@ textarea
 /*CONTACT US PAGE*/
 
 
+/*PLACES TO VISIT PAGE*/
+.placestovisit-header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.placestovisit {
+    display: flex;
+    padding-left: 10rem;
+    padding-bottom: 3rem;
+}
+
+.h6-font {
+    font-weight: bold;
+}
+
+.placestovisit-text {
+    padding-left: 2rem;
+    padding-right: 10rem;
+}
+/*PLACES TO VISIT PAGE*/
+
+
 /*MOBILE VIEW*/
 @media (max-width: 1247px) {
     header nav {
