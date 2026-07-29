@@ -28,6 +28,15 @@ header {
     gap: 2rem;
 }
 
+.header-title {
+    text-decoration: none;
+    color: black;
+}
+
+.header-title:hover {
+    color: green;
+}
+
 header nav {
     display: flex;
     gap: 1rem;
@@ -72,8 +81,6 @@ nav a:hover {
     100% {margin-left: 0;}
 }
 /*HOME PAGE IMAGE SLIDER*/
-
-
 
 
 .map {
@@ -179,7 +186,7 @@ th,td {
     text-align: center;
 }
 
-.table-container h2 {
+.table-container h3 {
     text-align: center;
     border-bottom: 1px solid black;
 }
