@@ -181,13 +181,9 @@ footer {
     font-size: 18px;
 }
 
-.table-container-video {
-    border: 2px solid rgb(128, 224, 128);
-    border-radius: 6px;
-    margin-bottom: 2rem;
-    padding: 3rem;
-    text-align: center;
-    max-width: fit-content;
+.table-container:hover {
+    background-color: rgb(231, 180, 241);
+    border: 2px solid rgb(231, 180, 241);
 }
 
 aside {
